@@ -1,0 +1,300 @@
+/* ============ reset all margin and padding also applying font family root ============ */
+/* ============ componen default settings start ============ */
+
+.header {
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 150%;
+	color: #000000;
+}
+
+.sub_header {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 36px;
+	color: #000000;
+}
+
+.text {
+	font-size: 14px;
+	font-weight: lighter;
+	line-height: 20px;
+	color: #000000;
+}
+
+.text_reguler {
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+}
+
+.text_bold {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 24px;
+	color: #000000;
+}
+
+.buttons {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #ffff;
+	background-color: #5cb85f;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 18px 10px 18px;
+	font-weight: bold;
+	transition: 0.3s ease-in-out;
+	text-transform: capitalize;
+}
+
+/* ============ componen default settings end ============ */
+/* ============ Sections default setting start ============ */
+
+.landing_page {
+	margin-bottom: 104px;
+}
+
+.our_service {
+	margin-bottom: 109px;
+}
+
+.testimonial {
+	margin: 109px auto 106px auto;
+}
+
+.cta_section {
+	margin-bottom: 100px;
+}
+
+/* ============ landing page start ============ */
+
+.landing_page {
+	position: relative;
+	background-color: #f1f3ff;
+	font-size: 20px;
+	padding-bottom: 100px;
+}
+
+.landing_page_header {
+	margin: 2em 0em 0em 2em;
+}
+
+.landing_page p {
+	margin: 1em 0em 0em 5em;
+	padding-right: 15px;
+}
+
+.right {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+.container_button_left {
+	position: relative;
+}
+
+.btn_landing_page {
+	margin: 2.5em 0em 0em 5em;
+}
+
+.btn_landing_page:hover {
+	background-color: #0a710c;
+	border-radius: 25px;
+}
+
+/* ============ landing page  end ============ */
+/* ============ our service start ============ */
+
+.right_service {
+	margin-top: 7em;
+}
+
+.our_service_image {
+	margin: 5em 0em 3em 0em;
+}
+
+.img_check {
+	width: 24px;
+	height: auto;
+	margin-right: 15px;
+}
+
+/* ============ our service  end ============ */
+/* ============ why us start ============ */
+
+.why_us {
+	margin: 150px auto 150px auto;
+}
+
+.svg_icons {
+	display: block;
+	margin: auto;
+}
+
+.icon_1 {
+	background-color: #f9cc00;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	padding: 8px;
+	margin-bottom: 20px;
+}
+
+.icon_2 {
+	background-color: #fa2c5a;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	padding: 7px 11px;
+	margin-bottom: 20px;
+}
+
+.icon_3 {
+	background-color: #0d28a6;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	padding: 6px 10px;
+	margin-bottom: 20px;
+}
+
+.icon_4 {
+	background-color: #5cb85f;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	padding: 6px 10px;
+	margin-bottom: 20px;
+}
+
+.card_4 {
+	padding-bottom: 10px;
+}
+
+/*============ why us end ============ */
+/* ============ testimonial  start ============ */
+
+.card_container_1 {
+	padding: 50px 50px;
+	background-color: #f1f3ff;
+	border: none;
+	border-radius: 8px;
+}
+
+.card_image {
+	display: flex;
+	position: relative;
+	width: 90px;
+	height: 90px;
+	margin: 50px 5px 0px -20px;
+	border-radius: 50%;
+}
+
+.star {
+	margin: 15px 0px;
+	width: 40%;
+	height: auto;
+}
+
+.text_card {
+	margin-right: -10px;
+}
+
+/* ============ testimonial  button group ============ */
+
+.button_group {
+	margin-top: 20px;
+}
+
+.btn_previous {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 1px solid #c4c4c4;
+	margin: 0px 12px 0px 12px;
+	transition: 0.3s ease-in-out;
+}
+
+.btn_previous:hover {
+	border-radius: 25%;
+	border: 2px solid #252323;
+	background-color: transparent;
+}
+
+.btn_next {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: #5cb85f;
+	transition: 0.3s ease-in-out;
+}
+
+.btn_next:hover {
+	border-radius: 25%;
+	background-color: #18bb1d;
+	transition: 0.3s ease-in-out;
+}
+
+/* ============ testimonial  end ============ */
+/* ============ cta  start ============ */
+
+.cta_section {
+	background-color: #0d28a6;
+	border-radius: 13px;
+	margin-top: 150px;
+}
+
+.cta_section h2 {
+	color: #ffffff;
+	padding: 75px 0px 30px 0px;
+}
+
+.cta_section p {
+	color: #ffffff;
+}
+
+.cta_section button {
+	margin: 75px auto;
+}
+
+.cta_section button:hover {
+	background-color: transparent;
+	border: 2px solid #5cb85f;
+	color: #fafafa;
+	border-radius: 25px;
+}
+/* ============ cta  end ============ */
+/* ============ FAQ  start ============ */
+.faq_section {
+	margin: 150px auto;
+}
+
+.faq_header {
+	margin-bottom: 20px;
+}
+
+.btn_dropdown {
+	border: 1px solid #d4d4d4;
+	border-radius: 4px;
+	background-color: transparent;
+	margin-bottom: 16px;
+}
+
+/* ============ dropdown  icon group ============ */
+
+/* ============ FAQ  end ============ */
+/* ============ Footer  start ============ */
+.icon_container a img {
+	width: 32px;
+	height: auto;
+}
+
+.bg_footer {
+	background-color: #f1f3ff;
+	padding: 5px;
+	padding-left: 25px;
+}
