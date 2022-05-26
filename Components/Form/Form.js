@@ -14,7 +14,7 @@ const Form = () => {
 	// setting dropzone
 	const { getRootProps, getInputProps, isDragActive, acceptedFiles } = useDropzone({});
 
-	// setting agar ketika menaruh file muncul nnama
+	// setting agar ketika menaruh file muncul nama
 	const files = acceptedFiles.map((file) => (
 		<li key={file.path}>
 			{file.path} - {file.size} bytes
