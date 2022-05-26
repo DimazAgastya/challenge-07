@@ -18,15 +18,25 @@ const Form = () => {
 			lastname: inputLastName.current.value,
 			location: inputLocation.current.value,
 		};
+
+		// belum dicoba work apa nggak
+		console.log(inputPhoto.current.files);
+
 		// define formData
 		const formData = new FormData();
 		//  formData diisi oleh json dalam bentuk string dari submittedData
 		formData.append("data", JSON.stringify(submittedData));
+		// memasukan foto
+		Array.from(inputPhoto.current.files).forEach((file) => {
+			formData.append("files.photo", file, file.name);
+		});
 
 		// data dimasukan ke database kemudian data dikirim ke response
 		const res = await axios.post("https://fejs-c7-api.herokuapp.com/api/students/", formData);
 		console.log(res.data);
 	};
+
+	// menit ke 54
 
 	return (
 		<>
@@ -43,6 +53,10 @@ const Form = () => {
 				<div className="my-3">
 					<label htmlFor="">Location</label>
 					<input type="text" name="location" id="location" ref={inputLocation}></input>
+				</div>
+				<div className="my-3">
+					<label htmlFor="">Photo</label>
+					<input type="file" name="photo" id="photo" ref={inputPhoto}></input>
 				</div>
 				<div>
 					<input type="submit" value="SUBMIT FORM" className={`${style.buttons} mt-4`} />
