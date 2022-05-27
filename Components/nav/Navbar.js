@@ -21,6 +21,9 @@ const Navbar = () => {
 							<a href="/barChart" className="nav-link active">
 								Chart <span className="sr-only"></span>
 							</a>
+							<a href="/download" className="nav-link active">
+								Download
+							</a>
 							<a href="/">
 								<button className={`${sharedStyle.buttons} ${style.btn_navbar}`}>Protect your data</button>
 							</a>

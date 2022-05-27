@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import "../styles/Home.module.css";
+import { useRouter } from "next/router";
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
@@ -16,9 +17,12 @@ const Home = () => {
 	// form config
 
 	const [students, setStudents] = useState([]);
+	const router = useRouter();
+
+	const { id } = router.query;
 
 	const myFunction = async () => {
-		const res = await axios.get("https://fejs-c7-api.herokuapp.com/api/students/?populate=*");
+		const res = await axios.get(`https://fejs-c7-api.herokuapp.com/api/students/?populate=*`);
 		setStudents([...res.data.data]);
 	};
 
@@ -38,12 +42,18 @@ const Home = () => {
 				{students.map((student) => {
 					return (
 						<>
-							<ul>
-								<li>first name : {student.attributes.firstname}</li>
-								<li>last name : {student.attributes.lastname}</li>
-								<li> Location : {student.attributes.location}</li>
-								<img src={student.attributes.photo.data.attributes.url} width="200px" />
-							</ul>
+							<div className="d-flex container">
+								<div className="">
+									<h2>Binar Students</h2>
+									<p className="mx-2 ">{student.attributes.firstname}</p>
+									<p className="mx-1">{student.attributes.lastname}</p>
+									{student.attributes.photo.data !== null && (
+										<Zoom>
+											<img className={style.photos} src={student.attributes.photo.data.attributes.url} />
+										</Zoom>
+									)}
+								</div>
+							</div>
 						</>
 					);
 				})}
@@ -72,10 +82,34 @@ export default Home;
 			</div>
 
 
+			<div className="card-group container">
+								<div className="card">
+									<div className="card-body">
+										<h5 className="card-title text-center">Binar Students</h5>
+										<img src="#" className="card-img-top" alt="..." />
+										<div className="d-flex text-center">
+											<p className="mx-2 ">{student.attributes.firstname}</p>
+											<p className="mx-1">{student.attributes.lastname}</p>
+											{student.attributes.photo.data !== null && (
+												<Zoom>
+													<img className={style.photos} src={student.attributes.photo.data.attributes.url} />
+												</Zoom>
+											)}
+										</div>
+									</div>
+								</div>
+							</div>
+
 */
 
 /* 
 	const [students, setStudents] = useState([]);
+									<img src={student.attributes.photo.data.attributes.url} width="200px" />
+
+									<li>first name : {student.attributes.firstname}</li>
+								<li>last name : {student.attributes.lastname}</li>
+								<li> Location : {student.attributes.location}</li>
+
 
 	useEffect(async () => {
 		const res = await axios.get("https://fejs-c7-api.herokuapp.com/api/students/?populate=*");
