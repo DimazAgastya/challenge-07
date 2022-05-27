@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");
 .header {
 	font-size: 36px;
 	font-weight: bold;
@@ -44,4 +45,52 @@
 	font-weight: bold;
 	transition: 0.3s ease-in-out;
 	text-transform: capitalize;
+}
+
+/* ============ form start ============ */
+
+.form_bg {
+	background-color: #f7f5f5;
+	padding: 20px 0px;
+	margin: 50px 50px 50px 50px;
+	border-radius: 12px;
+	background-color: #ecfaf0;
+}
+
+.container_form_1 {
+	margin-bottom: 20px;
+}
+
+.label_1 {
+	font-size: 20px;
+	font-family: Quicksand;
+	text-transform: capitalize;
+	margin: 3px 20px 0px 0px;
+	color: rgb(85, 86, 86);
+}
+.inputs {
+	width: 50%;
+	padding: 5px;
+	border: 1px solid rgb(229, 226, 225);
+	border-radius: 3px;
+}
+
+.inputs_2 {
+	width: 50%;
+	padding: 5px;
+	border: 1px solid rgb(229, 226, 225);
+	border-radius: 3px;
+	margin-left: 20px;
+}
+
+.photo_file {
+	background-color: #5cb85f;
+}
+
+.drag_bg {
+	border: 1px solid rgb(52, 172, 104);
+	padding: 30px;
+	text-transform: lowercase;
+	margin-top: 10px;
+	border-radius: 5px;
 }

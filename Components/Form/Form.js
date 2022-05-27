@@ -51,32 +51,45 @@ const Form = () => {
 	return (
 		<>
 			<Navbar />
-			<form onSubmit={formSubmitHadler} className="mx-5 my-5">
-				<div className="my-3">
-					<label htmlFor="">first Name</label>
-					<input type="text" name="firstname" id="firstname" ref={inputFirstName}></input>
-				</div>
-				<div className="my-3">
-					<label htmlFor="">last Name</label>
-					<input type="text" name="lastname" id="lastname" ref={inputLastName}></input>
-				</div>
-				<div className="my-3">
-					<label htmlFor="">Location</label>
-					<input type="text" name="location" id="location" ref={inputLocation}></input>
-				</div>
-				<div className="my-3">
-					<label htmlFor="">Photo</label>
-					<input type="file" name="photo" id="photo" ref={inputPhoto}></input>
-					<div {...getRootProps()}>
-						<input {...getInputProps()} />
-						{isDragActive ? <p>Drop the files here ...</p> : <p>Drag 'n' drop some files here, or click to select files</p>}
+			<div className="text-center mt-5">
+				<p>Store your data in here</p>
+			</div>
+			<div className={`container ${style.form_bg}`}>
+				<form onSubmit={formSubmitHadler} className="mx-5 my-5">
+					<div className={`${style.container_form_1} d-flex`}>
+						<label htmlFor="" className={`${style.label_1}`}>
+							first Name:
+						</label>
+						<input className={style.inputs} type="text" name="firstname" id="firstname" ref={inputFirstName} required></input>
 					</div>
-					<ul>{files}</ul>
-				</div>
-				<div>
-					<input type="submit" value="SUBMIT FORM" className={`${style.buttons} mt-4`} />
-				</div>
-			</form>
+					<div className={`${style.container_form_1} d-flex`}>
+						<label htmlFor="" className={`${style.label_1}`}>
+							last Name:
+						</label>
+						<input className={style.inputs} type="text" name="lastname" id="lastname" ref={inputLastName} required></input>
+					</div>
+					<div className={`${style.container_form_1} d-flex`}>
+						<label htmlFor="" className={`${style.label_1}`}>
+							Location:
+						</label>
+						<input className={style.inputs_2} type="text" name="location" id="location" ref={inputLocation} required></input>
+					</div>
+					<div className={`my-5`}>
+						<label htmlFor="" className={`${style.label_1}`}>
+							Photo
+						</label>
+						<input className={`mx-5`} type="file" name="photo" id="photo" ref={inputPhoto}></input>
+						<div {...getRootProps()} className={`${style.drag_bg}`}>
+							<input {...getInputProps()} />
+							{isDragActive ? <p>Drop the files here ...</p> : <p className="text-center"> or simply Drop here</p>}
+						</div>
+						<ul>{files}</ul>
+					</div>
+					<div>
+						<input type="submit" value="SUBMIT FORM" className={`${style.buttons} mt-4`} />
+					</div>
+				</form>
+			</div>
 		</>
 	);
 };
