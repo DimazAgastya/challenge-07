@@ -16,6 +16,11 @@ import "react-medium-image-zoom/dist/styles.css";
 const Home = () => {
 	// form config
 
+	var imageSize = {
+		width: "300px",
+		height: "400px",
+	};
+
 	const [students, setStudents] = useState([]);
 	const router = useRouter();
 
@@ -39,24 +44,27 @@ const Home = () => {
 			</Head>
 			<main>
 				<Form />
-				{students.map((student) => {
-					return (
-						<>
-							<div className="d-flex container">
-								<div className="">
-									<h2>Binar Students</h2>
-									<p className="mx-2 ">{student.attributes.firstname}</p>
-									<p className="mx-1">{student.attributes.lastname}</p>
+				<div className={style.card_container}>
+					{students.map((student) => {
+						return (
+							<div key={student.id} className={`card ` + style.card_}>
+								<div className={style.img_container}>
 									{student.attributes.photo.data !== null && (
 										<Zoom>
-											<img className={style.photos} src={student.attributes.photo.data.attributes.url} />
+											<img className="card-img-top img-thumbnail" src={student.attributes.photo.data.attributes.url} style={imageSize} />
 										</Zoom>
 									)}
+									<div className={`card-body` + style.cardBody}>
+										<p className="card-text">First Name: {student.attributes.firstname}</p>
+										<p className="card-text">Last Name: {student.attributes.lastname}</p>
+										<p className="card-text">Location: {student.attributes.location}</p>
+									</div>
 								</div>
 							</div>
-						</>
-					);
-				})}
+						);
+					})}
+				</div>
+
 				<div className={`${style.bg_footer} mt-5`}>
 					<Footer />
 				</div>
