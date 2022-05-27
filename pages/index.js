@@ -64,8 +64,7 @@ const Home = () => {
 						);
 					})}
 				</div>
-
-				<div className={`${style.bg_footer} mt-5`}>
+				<div className={`${style.bg_footer}`}>
 					<Footer />
 				</div>
 			</main>

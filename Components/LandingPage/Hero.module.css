@@ -280,8 +280,9 @@
 
 .bg_footer {
 	background-color: rgb(223, 245, 232);
-	padding: 5px;
+	margin-top: 200px;
 	padding-left: 25px;
+	padding-top: 20px;
 }
 
 .chart {

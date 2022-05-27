@@ -10,34 +10,23 @@ const Footer = () => {
 						<div className="row mt-3">
 							<div className={`col-md-3 col-lg-4 col-xl-3 mb-4 ${style.text_left}`}>
 								<h6 className={style.text_reguler}>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</h6>
-								<p className={style.text_reguler}>binarcarrental@gmail.com</p>
+								<p className={style.text_reguler}>binarstudent@gmail.com</p>
 								<p className={style.text_reguler}>081-233-334-808</p>
 							</div>
 							<div className="col-md-2 col-lg-2 col-xl-2 mb-4 text-left">
 								<p>
 									<a href="#!" className="text-reset ">
-										Our service
+										Download
 									</a>
 								</p>
 								<p>
 									<a href="#!" className="text-reset">
-										Why Us
-									</a>
-								</p>
-								<p>
-									<a href="#!" className="text-reset" t>
-										Testimonial
-									</a>
-								</p>
-								<p>
-									<a href="#!" className="text-reset">
-										FAQ
+										Chart
 									</a>
 								</p>
 							</div>
 							<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 								<h6 class={`${style.text_reguler} mb-4 p-0 mx-4`}>Copyright Binar 2022</h6>
-								<img src="/image/binar.png" alt="binar logo" />
 							</div>
 						</div>
 					</div>
