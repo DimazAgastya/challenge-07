@@ -40,7 +40,7 @@
 	font-weight: bold;
 	line-height: 20px;
 	color: #ffff;
-	background-color: #5cb85f;
+	background-color: #e4b61e;
 	border: none;
 	border-radius: 5px;
 	padding: 10px 18px 10px 18px;
@@ -67,12 +67,162 @@
 .cta_section {
 	margin-bottom: 100px;
 }
+/* ============ Navbar all start ============ */
+.blue_logo {
+	width: 180px;
+	height: 50px;
+	background-color: #116a14;
+	margin: 5px 0px 0px 80px;
+	border-radius: 3px;
+}
+
+.nav {
+	padding-right: 15px;
+	font-size: 18px;
+	line-height: 20%;
+	font-weight: 500;
+}
+
+.navbar_container {
+	margin: 0;
+}
+
+.navbar_bg {
+	background-color: #1ddb8f;
+	padding: 20px 0px;
+}
+
+.navbar_left {
+	margin-left: 0px;
+}
+
+.btn_navbar {
+	background-color: #000000;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px 10px 20px;
+	text-transform: capitalize;
+	color: #ffff;
+	font-size: 16px;
+	transition: 0.3s ease-in-out;
+	margin-left: 30px;
+	font-weight: bold;
+}
+
+.btn_navbar:hover {
+	background-color: #318034;
+	color: rgb(45, 44, 44);
+	color: #ffff;
+}
+
+.image_navbar {
+	width: 200px;
+	height: auto;
+}
+
+.navbar_groups {
+	justify-content: end;
+	margin-right: 125px;
+	margin-top: 15px;
+}
+
+/* ============ navbar end ============ */
+/* ============ navbar responsive start ============ */
+
+/* ============ navbar small screen start ============ */
+
+@media screen and (max-width: 576px) {
+	.image_navbar {
+		width: 175px;
+		height: auto;
+	}
+
+	.navbar_left {
+		margin: 0;
+	}
+
+	.navbar_groups {
+		margin: 15px 20px;
+	}
+
+	.btn_navbar {
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+}
+
+/* ============ navbar small screen end ============ */
+/* ============ navbar small-medium start ============ */
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+	.image_navbar {
+		width: 225px;
+		height: auto;
+	}
+
+	.navbar_left {
+		margin: 0;
+	}
+
+	.navbar_groups {
+		margin: 15px 30px;
+	}
+
+	.btn_navbar {
+		margin-top: 20px;
+		margin-left: 0px;
+		width: 75%;
+	}
+}
+
+/* ============ navbar small-medium  end ============ */
+/* ============ navbar medium start ============ */
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+	.image_navbar {
+		width: 225px;
+		height: auto;
+	}
+
+	.navbar_left {
+		margin: 0;
+	}
+
+	.navbar_groups {
+		margin: 15px 20px;
+	}
+
+	.btn_navbar {
+		margin-top: 20px;
+		margin-left: 0px;
+		width: 60%;
+	}
+}
+
+/* ============ navbar medium  end ============ */
+/* ============ navbar large start ============ */
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+	.navbar_left {
+		margin-left: 0;
+	}
+
+	.image_navbar {
+		width: 225px;
+		height: auto;
+	}
+
+	.navbar_groups {
+		margin: 0;
+		margin-right: 20px;
+	}
+}
 
 /* ============ landing page start ============ */
 
 .landing_page {
 	position: relative;
-	background-color: #f1f3ff;
+	background-color: rgb(223, 245, 232);
 	font-size: 20px;
 	padding-bottom: 100px;
 }
@@ -87,9 +237,7 @@
 }
 
 .right {
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
+	margin-top: 50px;
 }
 
 .container_button_left {
@@ -122,171 +270,8 @@
 	margin-right: 15px;
 }
 
-/* ============ our service  end ============ */
-/* ============ why us start ============ */
-
-.why_us {
-	margin: 150px auto 150px auto;
-}
-
-.svg_icons {
-	display: block;
-	margin: auto;
-}
-
-.icon_1 {
-	background-color: #f9cc00;
-	height: 40px;
-	width: 40px;
-	border-radius: 50%;
-	padding: 8px;
-	margin-bottom: 20px;
-}
-
-.icon_2 {
-	background-color: #fa2c5a;
-	height: 40px;
-	width: 40px;
-	border-radius: 50%;
-	padding: 7px 11px;
-	margin-bottom: 20px;
-}
-
-.icon_3 {
-	background-color: #0d28a6;
-	height: 40px;
-	width: 40px;
-	border-radius: 50%;
-	padding: 6px 10px;
-	margin-bottom: 20px;
-}
-
-.icon_4 {
-	background-color: #5cb85f;
-	height: 40px;
-	width: 40px;
-	border-radius: 50%;
-	padding: 6px 10px;
-	margin-bottom: 20px;
-}
-
-.card_4 {
-	padding-bottom: 10px;
-}
-
-/*============ why us end ============ */
-/* ============ testimonial  start ============ */
-
-.card_container_1 {
-	padding: 50px 50px;
-	background-color: #f1f3ff;
-	border: none;
-	border-radius: 8px;
-}
-
-.card_image {
-	display: flex;
-	position: relative;
-	width: 90px;
-	height: 90px;
-	margin: 50px 5px 0px -20px;
-	border-radius: 50%;
-}
-
-.star {
-	margin: 15px 0px;
-	width: 40%;
-	height: auto;
-}
-
-.text_card {
-	margin-right: -10px;
-}
-
-/* ============ testimonial  button group ============ */
-
-.button_group {
-	margin-top: 20px;
-}
-
-.btn_previous {
-	height: 40px;
-	width: 40px;
-	border-radius: 50%;
-	background-color: transparent;
-	border: 1px solid #c4c4c4;
-	margin: 0px 12px 0px 12px;
-	transition: 0.3s ease-in-out;
-}
-
-.btn_previous:hover {
-	border-radius: 25%;
-	border: 2px solid #252323;
-	background-color: transparent;
-}
-
-.btn_next {
-	height: 40px;
-	width: 40px;
-	border-radius: 50%;
-	background-color: #5cb85f;
-	transition: 0.3s ease-in-out;
-}
-
-.btn_next:hover {
-	border-radius: 25%;
-	background-color: #18bb1d;
-	transition: 0.3s ease-in-out;
-}
-
-/* ============ testimonial  end ============ */
-/* ============ cta  start ============ */
-
-.cta_section {
-	background-color: #0d28a6;
-	border-radius: 13px;
-	margin-top: 150px;
-}
-
-.cta_section h2 {
-	color: #ffffff;
-	padding: 75px 0px 30px 0px;
-}
-
-.cta_section p {
-	color: #ffffff;
-}
-
-.cta_section button {
-	margin: 75px auto;
-}
-
-.cta_section button:hover {
-	background-color: transparent;
-	border: 2px solid #5cb85f;
-	color: #fafafa;
-	border-radius: 25px;
-}
-/* ============ cta  end ============ */
-/* ============ FAQ  start ============ */
-.faq_section {
-	margin: 150px auto;
-}
-
-.faq_header {
-	margin-bottom: 20px;
-}
-
-.btn_dropdown {
-	border: 1px solid #d4d4d4;
-	border-radius: 4px;
-	background-color: transparent;
-	margin-bottom: 16px;
-}
-
 /* ============ dropdown  icon group ============ */
 
-/* ============ FAQ  end ============ */
 /* ============ Footer  start ============ */
 .icon_container a img {
 	width: 32px;
@@ -294,7 +279,14 @@
 }
 
 .bg_footer {
-	background-color: #f1f3ff;
+	background-color: rgb(223, 245, 232);
 	padding: 5px;
 	padding-left: 25px;
+}
+
+.chart {
+	margin: auto;
+	width: 100%;
+	padding: 10px;
+	background-color: #ffffff;
 }

@@ -1,9 +1,11 @@
-.blue_logo {
-	width: 180px;
-	height: 50px;
-	background-color: #1439de;
-	margin: 5px 0px 0px 80px;
-	border-radius: 3px;
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+.logo {
+	color: aliceblue;
+	font-family: Bangers;
+	font-size: 30px;
+	margin: -5px 0px 0px 50px;
+	text-decoration: none;
 }
 
 .nav {
@@ -18,7 +20,7 @@
 }
 
 .navbar_bg {
-	background-color: #f1f3ff;
+	background-color: #1ddb8f;
 	padding: 20px 0px;
 }
 
@@ -27,7 +29,7 @@
 }
 
 .btn_navbar {
-	background-color: #5cb85f;
+	background-color: #000000;
 	border: none;
 	border-radius: 5px;
 	padding: 10px 20px 10px 20px;
@@ -36,11 +38,13 @@
 	font-size: 16px;
 	transition: 0.3s ease-in-out;
 	margin-left: 30px;
+	font-weight: bold;
 }
 
 .btn_navbar:hover {
-	background-color: #42e947;
+	background-color: #318034;
 	color: rgb(45, 44, 44);
+	color: #ffff;
 }
 
 .image_navbar {
